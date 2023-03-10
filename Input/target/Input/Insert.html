@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";>
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	padding: 16px;
+	background-color: white;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=radio],
+	input[type=tel] {
+	width: 20%;
+	padding: 15px;
+	margin: 5px 0 10px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+.eye {
+	position: absolute;
+}
+
+#hide1 {
+	display: none;
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 10px;
+}
+
+.registerbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 22px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.registerbtn:hover {
+	opacity: 1;
+}
+
+a {
+	color: dodgerblue;
+}
+
+.signin {
+	background-color: #f1f1f1;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+	<center>
+		<h2>Registration Form</h2>
+	</center>
+	<form action="Gooooo" method="post">
+		<div class="container">
+			<hr>
+
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+			<label for="Name"><b>Name</b></label> &ensp;<input type="text"
+				name="Name" title="Name" placeholder="enter your name" required />
+
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+			<label for="Password"><b>Password</b></label> 
+			&ensp;&ensp; <input type="password" name="Password" id="password" placeholder="Enter Password"
+				pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,20}" title="Must contain at least one  number and one uppercase and lowercase letter, and Must 4 to 20 characters"
+				required /><input type="checkbox" onclick="myFunction()">show password<br>
+			<label for="ConfirmPassword"><b>Confirm Password</b> </label>
+			&ensp;&ensp;<input type="Password" name="ConfirmPassword"
+				placeholder="Confirm your password"
+				pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,20}"
+				title="Must contain at least one  number and one uppercase and lowercase letter, and Must 4 to 20 characters"
+				required /><input type="checkbox" onclick="myFunction()">show password<br></b>
+
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label
+				for="Email"><b>Email</b></label> &ensp;&ensp;<input type="email"
+				name="Email" placeholder="Enter your mail"
+				title="Must contain @ in email" required /> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label
+				for="PhNo"><b>Phone Number</b></label> &ensp;&ensp;&ensp; <input
+				type="tel" name="PhNo" placeholder="enter your number"
+				title="1.Eneter 10 digits only 2.No Zero at first" minlength="10"
+				pattern="[7-9]{1}[0-9]{9}" required /><br>
+
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label
+				for="Pincode"><b>Pincode</b></label> &ensp;&ensp;<input type="tel"
+				name="Pincode" ++placeholder="Enter pin code"
+				title="Enter 6 digits only" minlength="6" required />
+
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label
+				for="City"><b>City</b></label> &ensp;&ensp; <input type="text"
+				name="City" placeholder="enter city"><br>
+
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label for="EmpType"><b>Employee
+					Type</b></label> <select name="EmpType">
+				<option value="Employee">Employee</option>
+				<option value="admin">Admin</option>
+			</select>
+			&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label
+				for="Gender"><b>Gender</b></label> <select name="Gender">
+				<option value="Male">Male</option>
+				<option value="Female">FeMale</option>
+			</select><br>
+			<br>
+
+
+			<button type="submit" class="registerbtn">Register</button>
+		</div>
+		</div>
+		<div class="container signin">
+			<p>
+				Already have an account? <a
+					href="http://localhost:8080/Input/Login.html">Sign in</a>.
+			</p>
+		</div>
+	</form>
+	<script>
+function myFunction() {
+	  var x = document.getElementById("password");
+	  if (x.type === "password") {
+	    x.type = "text";
+	  } else {
+	    x.type = "password";
+	  }
+	}
+	
+
+</script>
+</body>
+</html>

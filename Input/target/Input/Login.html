@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+	border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+	width: 40%;
+	padding: 15px;
+	margin: 5px 0 10px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 40%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.container {
+	padding: 16px;
+}
+
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+}
+</style>
+</head>
+<body>
+
+	<center>
+		<h2>Login Form</h2>
+	</center>
+	<form action="Goooo" method="post">
+	
+		<div class="container">
+
+
+			<center><label for="Name"><b>Name</b></label>
+				&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<input type="text"
+					name="Name" title="Name" placeholder="enter your name" required /><br>
+
+				<label for="Password"><b>Password</b></label>
+				&ensp;&ensp;&ensp;&ensp;<input type="Password" name="Password"
+					placeholder="Enter Password" required /><br>
+				&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button type="submit">Login</button>
+			</center>
+
+		</div>
+
+		
+		<center><div class="container signin">
+			<p>
+				New user? <a href="http://localhost:8080/Input/Insert.html">Register</a>.
+			</p>
+		</div></center>
+	</form>
+</body>
+</html>
